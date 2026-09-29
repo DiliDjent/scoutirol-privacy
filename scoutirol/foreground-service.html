@@ -52,6 +52,20 @@
     padding: 1px 5px;
     border-radius: 4px;
   }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 12px 0;
+    font-size: 0.93rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 7px 10px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th { font-weight: 600; white-space: nowrap; }
+  td code { background: none; padding: 0; }
   .de {
     margin-top: 40px;
     padding-top: 24px;
@@ -78,31 +92,56 @@
   meantime.</p>
 
   <h2>What the video shows</h2>
+  <p>One real recording, filmed on 29 September 2026 on a Galaxy S23 running
+  Android 16. It has a single cut, marked by a title card, because the phone was
+  away from the recording computer while its owner was walking.</p>
   <ol>
-    <li>The “Record” tab with a running recording. The user started it by tapping
-      “Aufzeichnung starten” (“start recording”) — nothing starts on its own. The
-      button now reads “Stoppen &amp; speichern” (“stop &amp; save”) and the timer
-      counts up.</li>
-    <li>The hint below the numbers states plainly: “Aufzeichnung läuft – du kannst
-      das Handy einstecken und sperren. In der Leiste steht so lange eine
-      Meldung.” (“Recording is running – you can pocket and lock the phone. A
-      notification stays in the status bar while it does.”)</li>
-    <li>The notification drawer shows the ongoing notification
-      <strong>“ScouTirol zeichnet auf — Die Aufzeichnung läuft weiter, auch wenn
-      der Bildschirm aus ist”</strong> (“ScouTirol is recording — the recording
-      keeps running even when the display is off”).</li>
+    <li><strong>Before the tap.</strong> The “Record” tab, 0.0 km, and the button
+      “Aufzeichnung starten” (“start recording”). Nothing is running.</li>
+    <li><strong>The user taps it.</strong> The button becomes “Stoppen &amp;
+      speichern” (“stop &amp; save”), the timer starts, and a real GPS fix places
+      the blue dot on the map. The hint below the numbers reads: “Aufzeichnung
+      läuft – du kannst das Handy einstecken und sperren. In der Leiste steht so
+      lange eine Meldung.” (“Recording is running – you can pocket and lock the
+      phone. A notification stays in the status bar while it does.”)</li>
+    <li><strong>The notification.</strong> The drawer shows the ongoing
+      notification <em>“ScouTirol zeichnet auf — Die Aufzeichnung läuft weiter,
+      auch wenn der Bildschirm aus ist”</em> (“ScouTirol is recording — the
+      recording keeps running even when the display is off”).</li>
+    <li><strong>The screen goes off</strong> and the phone locks.</li>
+    <li><strong>The title card</strong> covers the walk: 64 minutes with the
+      screen off and locked, the phone in a pocket, 4.6 km on foot.</li>
+    <li><strong>After the walk.</strong> The same recording is still running:
+      4.6 km, 64:13, and the walked route drawn on the map. The user taps
+      “Stoppen &amp; speichern”, names the tour and saves it.</li>
   </ol>
-  <p>The distance stays at 0.0 km because the recording was made indoors on a
-  phone that did not move. A walk recorded with the same build on 28 September
-  2026 produced 110 points over 666 m with the screen locked and the phone in a
-  pocket.</p>
 
-  <h2>About the black areas in the video</h2>
-  <p>Everything except the ScouTirol notification is masked in the drawer
-  section, and the status bar is masked throughout. The original recording showed
-  the owner's carrier, wallpaper and unrelated personal notifications. Nothing
-  belonging to ScouTirol was removed or altered — the masking only covers private
-  content of the device owner.</p>
+  <h2>What was measured while the screen was off</h2>
+  <p>The phone was reconnected before it was unlocked, so the device state below
+  was read over ADB while the display was still off. These are the numbers behind
+  the video.</p>
+  <table>
+    <tr><th>Display</th><td><code>mWakefulness=Dozing</code>,
+      <code>mAwake=false</code>, <code>mScreenOn=false</code></td></tr>
+    <tr><th>Lock screen</th><td><code>isKeyguardShowing=true</code></td></tr>
+    <tr><th>Service</th><td><code>isForeground=true</code>, notification
+      “ScouTirol zeichnet auf” still posted</td></tr>
+    <tr><th>Recording</th><td>1 position before the walk → <strong>554
+      positions, 4 556 m</strong> after it</td></tr>
+    <tr><th>Source</th><td>real GPS throughout; the app’s fallback demo mode was
+      never active (<code>demoMode=false</code>)</td></tr>
+  </table>
+
+  <h2>About the cut and the black areas</h2>
+  <p>The recording computer cannot follow the phone on a walk, so the screen
+  capture was stopped before the walk and started again afterwards. The title
+  card marks that gap and states what happened during it. The app’s own recording
+  ran without interruption across the cut — that is what the point count and the
+  distance above show.</p>
+  <p>Two things are masked in black, both belonging to the device owner rather
+  than to the app: the status bar throughout (carrier, clock, status icons), and,
+  in the drawer section, the three unrelated notifications below the ScouTirol
+  one. Nothing that ScouTirol displays was removed, blurred or altered.</p>
 
   <h2>Scope</h2>
   <ul>
@@ -111,9 +150,8 @@
     <li>The app does <strong>not</strong> request
       <code>ACCESS_BACKGROUND_LOCATION</code>. The service is always started from
       the visible app.</li>
-    <li>The clip was recorded with a development build of the same version 2.3 on
-      a Galaxy S23 (Android 16); the bundle under review is the release build of
-      that version.</li>
+    <li>The clip was recorded with a development build of the same version 2.3;
+      the bundle under review is the release build of that version.</li>
     <li>Privacy policy:
       <a href="../index.html">dilidjent.github.io/scoutirol-privacy/</a></li>
   </ul>
@@ -125,9 +163,14 @@
     Vordergrunddienst vom Typ <code>location</code> weiter. Die Aufzeichnung
     beginnt ausschließlich auf Knopfdruck und endet, sobald der Nutzer sie
     beendet. Solange sie läuft, steht die Meldung „ScouTirol zeichnet auf“ in der
-    Leiste. Die Positionen bleiben auf dem Gerät. Die schwarzen Flächen im Video
-    decken Privates des Gerätebesitzers ab — Netzbetreiber, Hintergrundbild und
-    fremde Meldungen —, nichts davon gehört zu ScouTirol.</p>
+    Leiste. Die Positionen bleiben auf dem Gerät.</p>
+    <p>Der Film hat einen einzigen Schnitt, und die Zwischentafel sagt, was in
+    ihm passiert ist: 64 Minuten mit ausgeschaltetem, gesperrtem Bildschirm, das
+    Handy in der Tasche, 4,6 km zu Fuß. Die Aufzeichnung der App lief über den
+    Schnitt hinweg durch — aus einem Punkt wurden 554. Die schwarzen Flächen
+    decken Privates des Gerätebesitzers ab: durchgehend die Statusleiste, im
+    Leisten-Abschnitt die drei fremden Meldungen unter der von ScouTirol. An der
+    Anzeige der App wurde nichts verändert.</p>
   </div>
 
   <footer>This page exists for the Google Play review of ScouTirol.</footer>
