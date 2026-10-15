@@ -7,11 +7,15 @@
 | ScouTirol | https://dilidjent.github.io/scoutirol-privacy/ |
 | ScouTirol – Hilfe & Kontakt | https://dilidjent.github.io/scoutirol-privacy/scoutirol/support.html |
 | ScouTirol Winter | https://dilidjent.github.io/scoutirol-privacy/winterscout/ |
+| ScouTirol Winter – Hilfe & Kontakt | https://dilidjent.github.io/scoutirol-privacy/winterscout/support.html |
 
 Die Seiten von ScouTirol Winter (deutsch, italienisch, englisch) werden
 aus den Sprachdateien der App erzeugt: `python tool/privacy.py` im
 Projekt `WinterScoutSuedtirol`. Von Hand geändert werden sie nicht,
-sonst laufen App-Text und Website auseinander.
+sonst laufen App-Text und Website auseinander. Ausnahme ist
+`winterscout/support.html` (Support-URL für den App Store): sie ist eine
+Kopie von `docs/ios/support.html` im selben Projekt – dort ändern und
+hierher kopieren.
 
 Die Seiten von ScouTirol (`index.html`, `scoutirol/support.html`) sind Kopien aus dem App-Projekt
 (`docs/privacy.html`, `docs/support.html` im Repo `scoutirol.ios`). Dort ändern und hierher kopieren.
