@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Datenschutzerklärung – ScouTirol</title>
+<title>Datenschutzerklärung · Informativa sulla privacy · Privacy Policy – ScouTirol</title>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; color: #1a1a1a; }
   h1 { font-size: 1.6rem; }
@@ -14,10 +14,17 @@
   a { color: #0b5fff; }
   .stand { color: #666; font-size: 0.9rem; }
   .hinweis { background: #fff8e1; border: 1px solid #ffe082; padding: 0.75rem 1rem; border-radius: 6px; font-size: 0.9rem; }
+  nav.sprachwahl { margin-bottom: 1.5rem; }
+  nav.sprachwahl a[aria-current] { font-weight: 600; color: #1a1a1a; text-decoration: none; }
+  section { scroll-margin-top: 6rem; }
+  section:not([hidden]) ~ section:not([hidden]) { margin-top: 3rem; border-top: 2px solid #ddd; }
 </style>
 </head>
 <body>
 
+<nav class="sprachwahl" aria-label="Sprache · Lingua · Language"><a href="#de" hreflang="de" lang="de">Deutsch</a> · <a href="#it" hreflang="it" lang="it">Italiano</a> · <a href="#en" hreflang="en" lang="en">English</a></nav>
+
+<section id="de" lang="de" data-titel="Datenschutzerklärung – ScouTirol">
 <h1>Datenschutzerklärung – ScouTirol</h1>
 <p class="stand">Stand: 20. Oktober 2026 (ab Version 2.5.1, Android und iPhone)</p>
 
@@ -108,6 +115,233 @@
 
 <h2>8. Kontakt</h2>
 <p>Bei Fragen zum Datenschutz: <a href="mailto:diegofrisanco@gmail.com">diegofrisanco@gmail.com</a></p>
+</section>
 
+<section id="it" lang="it" data-titel="Informativa sulla privacy – ScouTirol">
+<h1>Informativa sulla privacy – ScouTirol</h1>
+<p class="stand">Ultimo aggiornamento: 20 ottobre 2026 (dalla versione 2.5.1, Android e iPhone)</p>
+
+<p>La presente informativa sulla privacy ti informa su quali dati tratta l'app <strong>ScouTirol</strong>, per quale scopo e quali servizi di terze parti vengono impiegati. Si applica all'app Android di Google Play e all'app per iPhone dell'App Store; dove le due si differenziano, è indicato nel testo.</p>
+
+<h2>1. Titolare del trattamento</h2>
+<p>Diego Frisanco<br>E-mail: <a href="mailto:diegofrisanco@gmail.com">diegofrisanco@gmail.com</a></p>
+<h2>2. Quali dati trattiamo</h2>
+
+<h3>Dati di posizione (GPS)</h3>
+<p>Per la pianificazione dei percorsi, la navigazione, la registrazione (tracciamento live durante escursioni a piedi/in bici), la funzione di chiamata di emergenza (SOS) e la ricerca di luoghi/punti d'interesse vicino a te. I dati di posizione vengono <strong>trattati localmente sul tuo dispositivo</strong> e non vengono mai trasmessi a noi – ScouTirol non ha un proprio server. Singole funzioni inviano coordinate ai servizi indicati di seguito, e solo nel momento in cui le utilizzi:</p>
+<ul>
+<li><strong>Calcolo del percorso (BRouter):</strong> partenza, tappe intermedie e destinazione. Se pianifichi a partire dalla tua posizione (“Partenza = posizione attuale”, “Anello dalla mia posizione”, “All'auto”) o se la navigazione ricalcola il percorso, si tratta della tua <strong>posizione attuale esatta</strong>.</li>
+<li><strong>Interrogazioni lungo il percorso (Overpass API):</strong> punti del percorso per i nomi delle strade alle svolte (durante la pianificazione e nella navigazione), nelle escursioni a piedi per i numeri dei sentieri; se è attivo “Passeggino e famiglia”, anche per parchi giochi, servizi igienici e acqua potabile lungo il cammino. Se l'auto non arriva fino alla destinazione, l'app cerca parcheggi nei dintorni della destinazione o prima di una chiusura.</li>
+<li><strong>Open Data Hub Alto Adige:</strong> parcheggi liberi intorno al punto di partenza, webcam entro 8 km dalla destinazione, rifugi nei dintorni del centro della mappa e – per escursioni a piedi e giri in bici – le previsioni meteo del comune nel punto più alto del percorso (come numero del comune). Il meteo per comprensorio, gli orari delle funivie e i punti di rilevamento del traffico vengono richiesti dall'app senza posizione, così come il meteo in montagna, il bollettino valanghe e le segnalazioni sul traffico.</li>
+<li><strong>Servizi cartografici:</strong> ricevono le porzioni di mappa che stai guardando. Se la mappa segue la tua posizione – nella navigazione, durante la registrazione o dopo “Centra sulla mia posizione” – i servizi cartografici vedono quindi approssimativamente dove ti trovi.</li>
+</ul>
+<p>Nella ricerca nei dintorni di punti d'interesse, rifugi e impianti di risalita viene inviata solo la porzione di mappa visibile o un raggio intorno al centro della mappa, non la tua posizione. La ricerca dei luoghi (Nominatim) riceve solo il termine di ricerca, la lingua dell'app e l'area di ricerca fissa Alto Adige, nessuna posizione; cerca solo quando tocchi la lente o il tasto di ricerca della tastiera, e al massimo una volta al secondo. Se tra i risultati c'è una funivia che l'app non conosce, l'app chiede a Nominatim i suoi punti terminali (solo l'identificativo OpenStreetMap dell'impianto). Per motivi tecnici i servizi vedono il tuo indirizzo IP; ScouTirol non invia alcun identificativo del dispositivo o pubblicitario.</p>
+
+<p>A schermo bloccato ScouTirol usa la posizione <strong>solo mentre è in corso una registrazione che hai avviato tu</strong>. Android mostra in quel caso una notifica, l'iPhone l'indicatore blu della posizione in alto sullo schermo.</p>
+
+<p>L'ultima posizione nota viene salvata <strong>solo sul dispositivo</strong> e sostituita dalla successiva; viene usata al massimo per 12 ore. La scheda di emergenza può mostrarla finché il GPS non ha ancora una posizione precisa – in caso di emergenza ogni informazione conta.</p>
+
+<h3>Foto con posizione</h3>
+<p>Con il pulsante della fotocamera puoi scattare una foto mentre sei in giro. Su Android ScouTirol apre a tale scopo l'app Fotocamera del tuo dispositivo e ne acquisisce l'immagine; sull'iPhone la fotocamera si apre direttamente nell'app. Per ogni foto l'app salva data e ora, la posizione dello scatto (coordinate, precisione, altitudine), se nota, e – se è in corso una registrazione – l'associazione a quel tour.</p>
+<p>Foto e posizione restano <strong>solo sul tuo dispositivo</strong>, in una cartella propria dell'app. Non finiscono nella tua galleria o nella libreria di Foto e non vengono trasferite a noi o a terzi. Su Android ScouTirol elimina il file temporaneo creato dall'app Fotocamera non appena la foto è stata acquisita. Puoi eliminare ogni foto nell'app.</p>
+
+<h3>Copertina di un tour</h3>
+<p>Quando aggiungi una copertina a un tour, la scegli tramite il selettore di immagini del tuo dispositivo. ScouTirol riceve solo l'immagine che selezioni e la salva solo localmente sul tuo dispositivo.</p>
+
+<h3>Scheda immagine di un tour</h3>
+<p>Se condividi un tour come immagine, la scheda immagine viene creata sul tuo dispositivo e, tramite il menu di condivisione, va solo dove la invii tu. Se sull'iPhone scegli “Salva immagine”, iOS la salva nelle tue Foto dopo avertelo chiesto una volta.</p>
+
+<h3>Acquisto dell'app</h3>
+<p>L'app si acquista tramite <strong>Google Play</strong> o l'<strong>App Store</strong> di Apple. I dati di pagamento sono trattati esclusivamente da Google o da Apple; noi non riceviamo alcun dato di pagamento. Non ci sono acquisti in-app. Si applica inoltre l'informativa sulla privacy di Google o di Apple.</p>
+
+<h3>Condivisione con un tuo tocco</h3>
+<p>Piano del giro, segno di vita, “arrivato bene” e “Condividi posizione” aprono il menu di condivisione del tuo dispositivo. Il testo contiene allora partenza, destinazione, parcheggio o la tua posizione attuale come link alla mappa e va solo all'app e alla persona che scegli tu. Senza un tuo tocco non viene condiviso nulla.</p>
+
+<h3>Segnalazione di errori</h3>
+<p>Se in <em>Altro → Segnala un errore</em> tocchi “Invia via email”, si apre la tua app di posta con la tua descrizione e dati tecnici (lingua, piattaforma, stato della memoria e dimensione della memoria delle mappe, identificativo del browser del dispositivo con tipo di dispositivo e versione del sistema). Solo quando invii tu stesso l'e-mail la riceviamo, insieme al tuo indirizzo e-mail, e la usiamo solo per gestire l'errore. La conserviamo solo per il tempo necessario a tale scopo.</p>
+
+<h3>Nessuna pubblicità, nessun tracciamento</h3>
+<p>ScouTirol non contiene SDK pubblicitari, analytics/tracciamento né ID pubblicitari. Non vengono creati profili di utilizzo. Poiché non c'è alcun tracciamento delle app, sull'iPhone ScouTirol non lo chiede nemmeno.</p>
+
+<h2>3. Servizi di terze parti</h2>
+<p>Per singole funzioni l'app accede ai seguenti servizi esterni. Quando li si utilizza, al rispettivo fornitore vengono trasmessi i dati tecnicamente necessari (ad es. porzione di mappa, termine di ricerca, coordinate del percorso) – quali coordinate esattamente, è indicato sopra in “Dati di posizione”. L'app elenca tutte le fonti cartografiche e di dati in <em>Altro → Dati cartografici e licenze</em>, con link e, se pubblicata, con licenza.</p>
+
+<table>
+<tr><th>Servizio</th><th>Finalità</th><th>Informativa sulla privacy</th></tr>
+<tr><td>OpenStreetMap (tile.openstreetmap.org)</td><td>Visualizzazione della mappa: stile mappa “OpenStreetMap”; inoltre, fuori dal territorio provinciale e ai margini della provincia, per la carta provinciale e l'ortofoto, nella panoramica a zoom ridotto della carta provinciale e come sostituto quando il servizio cartografico della Provincia non fornisce un tile (ad esempio in caso di guasto). L'app carica questi tile solo online e non li salva per l'uso senza rete.</td><td>osmfoundation.org/wiki/Privacy_Policy</td></tr>
+<tr><td>OpenTopoMap (tile.opentopomap.org)</td><td>Visualizzazione della mappa: stile mappa “Rilievo (Topo)”. Le porzioni visualizzate restano salvate sul dispositivo; non viene precaricato nulla.</td><td>opentopomap.org/about</td></tr>
+<tr><td>Servizi geografici della Provincia di Bolzano (geoservices.buergernetz.bz.it)</td><td>Visualizzazione della mappa: Carta provinciale Alto Adige e Ortofoto Alto Adige (ortofoto 2023). Le porzioni visualizzate restano salvate sul dispositivo.</td><td>provinz.bz.it</td></tr>
+<tr><td>Waymarked Trails (tile.waymarkedtrails.org)</td><td>Sentieri e piste ciclabili come livello della mappa, solo se attivato</td><td>waymarkedtrails.org</td></tr>
+<tr><td>Overpass API (overpass-api.de, FOSSGIS e.V., Germania; server di riserva overpass.kumi.systems, Kumi Systems e.U., Austria)</td><td>Ricerca di punti d'interesse, cime, luoghi e impianti di risalita nella porzione di mappa; nomi delle strade, nelle escursioni a piedi i numeri dei sentieri e, con “Passeggino e famiglia”, punti per famiglie lungo il percorso; parcheggi alla destinazione o prima di una chiusura. Se overpass-api.de risponde con un errore o non in tempo – per le interrogazioni lungo il percorso già dopo 4 secondi – l'app interroga anche il server di riserva. L'app Android fino alla versione 2.5.1 inclusa utilizza a tal fine anche maps.mail.ru (VK, Russia – un paese privo di una decisione di adeguatezza dell'UE); in tal caso vi vengono inviate le coordinate dell'interrogazione e, per motivi tecnici, il tuo indirizzo IP. L'app per iPhone non interroga maps.mail.ru.</td><td>fossgis.de/datenschutzerklärung; kumi.systems/en/legal; per maps.mail.ru: help.mail.ru/legal/terms/common/privacy</td></tr>
+<tr><td>Nominatim (nominatim.openstreetmap.org)</td><td>Ricerca dei luoghi: solo termine di ricerca e lingua, solo quando tocchi la lente o il tasto di ricerca; punti terminali di funivie sconosciute (solo il loro identificativo OpenStreetMap)</td><td>osmfoundation.org/wiki/Privacy_Policy</td></tr>
+<tr><td>BRouter (brouter.de)</td><td>Calcolo del percorso: coordinate di partenza, tappe intermedie e destinazione – quindi, nella pianificazione a partire dalla tua posizione e nel ricalcolo durante la navigazione, la tua posizione attuale</td><td>brouter.de/privacypolicy.html</td></tr>
+<tr><td>Wikipedia / Wikidata (Wikimedia)</td><td>Immagini e descrizioni di luoghi e montagne che tocchi (viene trasmesso il titolo della voce o l'identificativo Wikidata); la fonte è indicata nell'anteprima</td><td>wikimediafoundation.org/privacy</td></tr>
+<tr><td>avalanche.report (EURAC/Land Tirolo/Provincia di Bolzano)</td><td>Bollettino valanghe</td><td>avalanche.report</td></tr>
+<tr><td>Open Data Hub Alto Adige (IDM Südtirol / NOI Techpark)</td><td>Previsioni meteo per comune e comprensorio, orari delle funivie, rifugi, parcheggi liberi alla partenza, webcam alla destinazione, punti di rilevamento del traffico</td><td>opendatahub.com</td></tr>
+<tr><td>Gestori di webcam (ad es. feratel, Panomax, realcam)</td><td>Immagine di anteprima della webcam più vicina alla destinazione, caricata direttamente dal gestore</td><td>Sito del rispettivo gestore</td></tr>
+<tr><td>Servizio meteorologico provinciale (api-weather.services.siag.it)</td><td>Meteo in montagna e quota dello zero termico</td><td>provinz.bz.it</td></tr>
+<tr><td>Segnalazioni sul traffico della Provincia di Bolzano (static-verkehr.provinz.bz.it)</td><td>Chiusure stradali lungo il percorso pianificato</td><td>provinz.bz.it</td></tr>
+<tr><td>Google Maps (solo nei testi che condividi tu)</td><td>Link alla mappa in “Condividi posizione”, nel piano del giro e nel segno di vita; l'app stessa non invia alcuna richiesta a Google – Google riceve le coordinate solo quando qualcuno apre il link</td><td>policies.google.com/privacy</td></tr>
+</table>
+
+<p>Questi servizi vengono interrogati esclusivamente per fornire la rispettiva funzione dell'app, non per finalità pubblicitarie o di analisi. La libreria cartografica e i caratteri sono inclusi nell'app; all'avvio non vengono inviate richieste a Google Fonts o ad altri servizi di caratteri e script.</p>
+
+<h2>4. Conservazione e cancellazione</h2>
+<ul>
+<li>I dati locali (percorsi pianificati, tour registrati, luoghi salvati, foto, tile della mappa offline, luoghi cercati di recente con i relativi risultati – al massimo 60 ricerche, ciascuna per 30 giorni) restano sul tuo dispositivo e vengono rimossi con la disinstallazione dell'app. Puoi svuotare la memoria delle mappe in <em>Altro → Elimina dati offline</em>.</li>
+<li><strong>Android:</strong> se sul tuo dispositivo hai attivato il backup Android tramite il tuo account Google, Android include i dati dell'app in questo backup – cioè tour, luoghi salvati e l'elenco delle tue foto con data, ora e posizione. ScouTirol ne esclude i file delle immagini stessi. Il backup si trova nel tuo account Google personale; noi non vi abbiamo accesso.</li>
+<li><strong>iPhone:</strong> se esegui il backup del tuo iPhone tramite iCloud o il tuo computer, iOS include i dati dell'app in questo backup – tour, luoghi salvati e le tue foto con data, ora e posizione. Così restano disponibili quando cambi dispositivo. Il backup si trova nel tuo account iCloud personale o sul tuo computer; noi non vi abbiamo accesso.</li>
+<li>Tour, luoghi salvati e foto li elimini tu stesso nell'app; per essi non esiste un termine di cancellazione automatica. Le ricerche memorizzate temporaneamente scadono dopo 30 giorni. La disinstallazione dell'app rimuove tutto insieme.</li>
+</ul>
+
+<h2>5. I tuoi diritti</h2>
+<p>Ai sensi del RGPD hai il diritto di accesso, rettifica, cancellazione e limitazione del trattamento dei tuoi dati, nonché il diritto alla portabilità dei dati. A tal fine rivolgiti all'indirizzo di contatto indicato sopra. Hai inoltre il diritto di proporre reclamo a un'autorità di controllo per la protezione dei dati (in Alto Adige/Italia: Garante per la protezione dei dati personali).</p>
+
+<h2>6. Autorizzazioni</h2>
+<p><strong>Posizione:</strong> su Android l'app richiede l'autorizzazione “Posizione precisa/approssimativa” (<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>), sull'iPhone l'autorizzazione “Mentre usi l'app”; “Sempre” non serve a ScouTirol. Viene utilizzata esclusivamente per le funzioni descritte sopra. In background o a schermo bloccato ScouTirol usa la posizione solo mentre è in corso una registrazione che hai avviato tu; navigazione e SOS richiedono che l'app sia aperta.</p>
+<p><strong>Fotocamera:</strong> su Android ScouTirol non richiede l'autorizzazione alla fotocamera. Le foto vengono scattate dall'app Fotocamera del tuo dispositivo, che le restituisce a ScouTirol. Sull'iPhone, alla prima foto iOS chiede se ScouTirol può usare la fotocamera.</p>
+<p><strong>Foto (iPhone):</strong> solo per “Salva immagine” iOS chiede se ScouTirol può aggiungere immagini alle tue Foto. ScouTirol non ha bisogno dell'accesso in lettura alla tua libreria.</p>
+<p>Puoi revocare ogni autorizzazione in qualsiasi momento nelle impostazioni del tuo dispositivo (Android: <em>Impostazioni → App → ScouTirol → Autorizzazioni</em>; iPhone: <em>Impostazioni → ScouTirol</em>).</p>
+
+<h2>7. Modifiche alla presente informativa</h2>
+<p>Ci riserviamo il diritto di adeguare la presente informativa sulla privacy con l'evoluzione dell'app. La versione di volta in volta aggiornata è disponibile nell'app in <em>Altro → Privacy</em> e tramite il link nella descrizione su Google Play e nell'App Store.</p>
+
+<h2>8. Contatti</h2>
+<p>Per domande sulla protezione dei dati: <a href="mailto:diegofrisanco@gmail.com">diegofrisanco@gmail.com</a></p>
+</section>
+
+<section id="en" lang="en" data-titel="Privacy Policy – ScouTirol">
+<h1>Privacy Policy – ScouTirol</h1>
+<p class="stand">Last updated: 20 October 2026 (from version 2.5.1, Android and iPhone)</p>
+
+<p>This privacy policy informs you about which data the <strong>ScouTirol</strong> app processes, for what purpose, and which third-party services are used in doing so. It applies to the Android app from Google Play and the iPhone app from the App Store; where the two differ, this is stated.</p>
+
+<h2>1. Controller</h2>
+<p>Diego Frisanco<br>Email: <a href="mailto:diegofrisanco@gmail.com">diegofrisanco@gmail.com</a></p>
+<h2>2. What data we process</h2>
+
+<h3>Location data (GPS)</h3>
+<p>For route planning, navigation, recording (live tracking while hiking/cycling), the emergency call function (SOS) and the search for places/sights near you. Location data is <strong>processed locally on your device</strong> and never transmitted to us – ScouTirol has no server of its own. Individual functions send coordinates to the services named below, and only at the moment you use them:</p>
+<ul>
+<li><strong>Route calculation (BRouter):</strong> start, intermediate destinations and destination. If you plan from your location (“Start = my location”, “Round trip from my location”, “To the car”) or navigation recalculates the route, this is your <strong>precise current location</strong>.</li>
+<li><strong>Queries along the route (Overpass API):</strong> points of the route for the street names at turns (when planning and in navigation), on hikes, for the trail numbers; if “Pushchair &amp; family” is switched on, also for playgrounds, toilets and drinking water along the way. If the car cannot get all the way to the destination, the app queries car parks around the destination or before a closure.</li>
+<li><strong>Open Data Hub South Tyrol:</strong> free parking spaces around the starting point, webcams within 8 km of the destination, huts around the centre of the map and – for hikes and bike tours – the weather forecast of the municipality at the highest point of the route (as a municipality number). The app retrieves district weather, cable car timetables and traffic counters without your location, and likewise mountain weather, the avalanche bulletin and traffic notices.</li>
+<li><strong>Map services:</strong> They receive the map areas you are currently viewing. So if the map follows your position – in navigation, while recording or after “Center on my location” – the map services see roughly where you are.</li>
+</ul>
+<p>For the nearby search for sights, huts and lifts, only the visible map area or a radius around the centre of the map is sent, not your location. The place search (Nominatim) receives only your search term, the language of the app and the fixed search area South Tyrol, no location; it only searches when you tap the magnifying glass or the search key on the keyboard, and at most once per second. If the results include a cable car that the app does not know, it asks Nominatim for its end points (only the OpenStreetMap ID of the cable car). For technical reasons, the services see your IP address; ScouTirol does not send any device or advertising identifier.</p>
+
+<p>With the screen locked, ScouTirol uses your location <strong>only while a recording that you started yourself is running</strong>. Android shows a notification while this happens, the iPhone the blue location indicator at the top of the screen.</p>
+
+<p>The last known position is stored <strong>only on the device</strong> and replaced by the next one; it is used for at most 12 hours. The emergency sheet can show it as long as the GPS does not yet have a precise location – in an emergency, every detail counts.</p>
+
+<h3>Photos with location</h3>
+<p>With the camera button you can take a photo while you are out. On Android, ScouTirol opens your device's camera app for this and imports the picture from it; on iPhone, the camera opens directly in the app. For each photo, the app stores the date and time, the location where it was taken (coordinates, accuracy, altitude), if one is known, and – if a recording is running – its assignment to that tour.</p>
+<p>The photo and location remain <strong>only on your device</strong>, in a separate folder of the app. They do not end up in your gallery or Photos library and are not transferred to us or to third parties. On Android, ScouTirol deletes the temporary file created by the camera app as soon as the photo has been imported. You can delete any photo in the app.</p>
+
+<h3>Cover picture of a tour</h3>
+<p>When you add a cover picture to a tour, you choose it using your device's picture picker. ScouTirol only receives the picture you select and stores it only locally on your device.</p>
+
+<h3>Image card of a tour</h3>
+<p>If you share a tour as an image, the image card is created on your device and, via the share menu, goes only where you send it yourself. If you choose “Save Image” on iPhone, iOS saves it to your Photos after asking you once.</p>
+
+<h3>Purchase of the app</h3>
+<p>The app is purchased via <strong>Google Play</strong> or Apple's <strong>App Store</strong>. Payment data is processed exclusively by Google or Apple; we do not receive any payment data. There are no in-app purchases. The privacy policy of Google or Apple also applies.</p>
+
+<h3>Sharing when you tap</h3>
+<p>Tour plan, sign of life, “arrived safely” and “Share location” open your device's share menu. The text then contains the start, destination, car park or your current location as a map link and goes only to the app and the person you choose yourself. Nothing is shared without your tap.</p>
+
+<h3>Bug report</h3>
+<p>If you tap “Send by email” under <em>More → Report a bug</em>, your mail app opens with your description and technical details (language, platform, storage status and size of the map storage, the device's browser identifier with device type and system version). Only when you send the email yourself do we receive it, together with your email address, and we use it only to deal with the bug. We keep it only as long as we need it for this purpose.</p>
+
+<h3>No advertising, no tracking</h3>
+<p>ScouTirol contains no advertising SDKs, no analytics/tracking and no advertising IDs. No usage profiles are created. As there is no app tracking, ScouTirol does not ask about it on iPhone either.</p>
+
+<h2>3. Third-party services</h2>
+<p>For individual functions, the app accesses the following external services. When they are used, technically necessary data (e.g. map area, search term, route coordinates) is transmitted to the respective provider – exactly which coordinates is stated above under “Location data”. The app lists all map and data sources under <em>More → Map data &amp; licences</em>, with a link and, where published, with the licence.</p>
+
+<table>
+<tr><th>Service</th><th>Purpose</th><th>Privacy policy</th></tr>
+<tr><td>OpenStreetMap (tile.openstreetmap.org)</td><td>Map display: map style “OpenStreetMap”; also, outside the province and at its edge, for the official map and the aerial view, in the zoomed-out overview of the official map and as a replacement when the province's map service does not deliver a tile (for instance during an outage). The app loads these tiles only online and does not store them for offline use.</td><td>osmfoundation.org/wiki/Privacy_Policy</td></tr>
+<tr><td>OpenTopoMap (tile.opentopomap.org)</td><td>Map display: map style “Relief (Topo)”. Areas you have viewed remain stored on the device; nothing is preloaded.</td><td>opentopomap.org/about</td></tr>
+<tr><td>Geoservices of the Province of Bolzano (geoservices.buergernetz.bz.it)</td><td>Map display: South Tyrol official map and South Tyrol aerial (orthophoto 2023). Areas you have viewed remain stored on the device.</td><td>provinz.bz.it</td></tr>
+<tr><td>Waymarked Trails (tile.waymarkedtrails.org)</td><td>Hiking trails and cycle routes as a map layer, only when switched on</td><td>waymarkedtrails.org</td></tr>
+<tr><td>Overpass API (overpass-api.de, FOSSGIS e.V., Germany; fallback server overpass.kumi.systems, Kumi Systems e.U., Austria)</td><td>Search for sights, peaks, places and lifts in the map area; street names, trail numbers on hikes and, with “Pushchair &amp; family”, family points along the route; car parks at the destination or before a closure. If overpass-api.de responds with an error or not in time – for the queries along the route after just 4 seconds – the app also queries the fallback server. The Android app up to and including version 2.5.1 additionally uses maps.mail.ru (VK, Russia – a country without an EU adequacy decision) for this; the coordinates of the query and, for technical reasons, your IP address are then sent there. The iPhone app does not query maps.mail.ru.</td><td>fossgis.de/datenschutzerklärung; kumi.systems/en/legal; for maps.mail.ru: help.mail.ru/legal/terms/common/privacy</td></tr>
+<tr><td>Nominatim (nominatim.openstreetmap.org)</td><td>Place search: only search term and language, only when you tap the magnifying glass or the search key; end points of unknown cable cars (only their OpenStreetMap ID)</td><td>osmfoundation.org/wiki/Privacy_Policy</td></tr>
+<tr><td>BRouter (brouter.de)</td><td>Route calculation: coordinates of start, intermediate destinations and destination – so when planning from your location and when recalculating in navigation, your current location</td><td>brouter.de/privacypolicy.html</td></tr>
+<tr><td>Wikipedia / Wikidata (Wikimedia)</td><td>Pictures &amp; descriptions of places and mountains you tap (the article title or the Wikidata ID is transmitted); the source is shown in the preview</td><td>wikimediafoundation.org/privacy</td></tr>
+<tr><td>avalanche.report (EURAC/State of Tyrol/Province of Bolzano)</td><td>Avalanche bulletin</td><td>avalanche.report</td></tr>
+<tr><td>Open Data Hub South Tyrol (IDM Südtirol / NOI Techpark)</td><td>Weather forecast per municipality and district, cable car timetables, huts, free parking at the start, webcams at the destination, traffic counters</td><td>opendatahub.com</td></tr>
+<tr><td>Webcam operators (e.g. feratel, Panomax, realcam)</td><td>Preview image of the nearest webcam at the destination, loaded directly from the operator</td><td>Website of the respective operator</td></tr>
+<tr><td>South Tyrol weather service (api-weather.services.siag.it)</td><td>Mountain weather and freezing level</td><td>provinz.bz.it</td></tr>
+<tr><td>Traffic notices of the Province of Bolzano (static-verkehr.provinz.bz.it)</td><td>Road closures along the planned route</td><td>provinz.bz.it</td></tr>
+<tr><td>Google Maps (only in texts you share yourself)</td><td>Map links in “Share location”, in the tour plan and in the sign of life; the app itself does not make any request to Google – Google only receives the coordinates when someone opens the link</td><td>policies.google.com/privacy</td></tr>
+</table>
+
+<p>These services are requested exclusively to provide the respective app function, not for advertising or analytics purposes. The map library and fonts are included in the app; at startup, no requests are made to Google Fonts or other font and script services.</p>
+
+<h2>4. Storage and deletion</h2>
+<ul>
+<li>Local data (planned routes, recorded tours, saved places, photos, offline map tiles, recently searched places including results – at most 60 searches, each for 30 days) remains on your device and is removed when the app is uninstalled. You can empty the map storage under <em>More → Delete offline data</em>.</li>
+<li><strong>Android:</strong> If you have switched on Android backup via your Google account on your device, Android includes the app data in this backup – i.e. tours, saved places and the list of your photos with date, time and location. ScouTirol excludes the image files themselves from it. The backup is stored in your own Google account; we have no access to it.</li>
+<li><strong>iPhone:</strong> If you back up your iPhone via iCloud or your computer, iOS includes the app data in this backup – tours, saved places and your photos including date, time and location. This way they are kept when you change devices. The backup is stored in your own iCloud account or on your computer; we have no access to it.</li>
+<li>You delete tours, saved places and photos yourself in the app; there is no automatic deletion period for them. Cached searches expire after 30 days. Uninstalling the app removes everything together.</li>
+</ul>
+
+<h2>5. Your rights</h2>
+<p>Under the GDPR, you have the right of access, rectification, erasure and restriction of processing of your data, as well as the right to data portability. To do so, use the contact address given above. You also have the right to lodge a complaint with a data protection supervisory authority (in South Tyrol/Italy: Garante per la protezione dei dati personali).</p>
+
+<h2>6. Permissions</h2>
+<p><strong>Location:</strong> On Android, the app requests the permission “Precise/Approximate location” (<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>), on iPhone the permission “While Using the App”; ScouTirol does not need “Always”. It is used exclusively for the functions described above. In the background or with the screen locked, ScouTirol uses your location only while a recording that you started yourself is running; navigation and SOS need the app to be open.</p>
+<p><strong>Camera:</strong> On Android, ScouTirol does not request camera permission. Photos are taken by your device's camera app, which returns them to ScouTirol. On iPhone, iOS asks when you take the first photo whether ScouTirol may use the camera.</p>
+<p><strong>Photos (iPhone):</strong> Only for “Save Image” does iOS ask whether ScouTirol may add pictures to your Photos. ScouTirol does not need read access to your library.</p>
+<p>You can revoke any permission at any time in your device's settings (Android: <em>Settings → Apps → ScouTirol → Permissions</em>; iPhone: <em>Settings → ScouTirol</em>).</p>
+
+<h2>7. Changes to this policy</h2>
+<p>We reserve the right to adapt this privacy policy as the app is developed further. The current version is always available in the app under <em>More → Privacy</em> and via the link in the description on Google Play and in the App Store.</p>
+
+<h2>8. Contact</h2>
+<p>For questions about data protection: <a href="mailto:diegofrisanco@gmail.com">diegofrisanco@gmail.com</a></p>
+</section>
+
+<script>
+/* Sprachwahl: zeigt nur die Fassung zum Anker (#de, #it, #en) oder sonst zur Browsersprache
+   (erste passende in navigator.languages: it* -> it, de* -> de, en* -> en; keine passende -> en).
+   Ohne Skript bleiben alle drei Fassungen untereinander sichtbar. */
+(function () {
+  var sprachen = ['de', 'it', 'en'];
+  function ausAnker() {
+    var h = (location.hash || '').slice(1).toLowerCase();
+    return sprachen.indexOf(h) >= 0 ? h : null;
+  }
+  function ausBrowser() {
+    var liste = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || ''];
+    for (var i = 0; i < liste.length; i++) {
+      var m = /^(it|de|en)([-_]|$)/.exec(String(liste[i]).toLowerCase());
+      if (m) return m[1];
+    }
+    return 'en';
+  }
+  function zeige(sprache) {
+    for (var i = 0; i < sprachen.length; i++) {
+      var s = sprachen[i];
+      var abschnitt = document.getElementById(s);
+      var link = document.querySelector('nav.sprachwahl a[href="#' + s + '"]');
+      abschnitt.hidden = (s !== sprache);
+      if (s === sprache) {
+        link.setAttribute('aria-current', 'true');
+        document.title = abschnitt.getAttribute('data-titel');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    }
+    document.documentElement.lang = sprache;
+  }
+  zeige(ausAnker() || ausBrowser());
+  window.addEventListener('hashchange', function () {
+    zeige(ausAnker() || ausBrowser());
+    window.scrollTo(0, 0);
+  });
+})();
+</script>
 </body>
 </html>

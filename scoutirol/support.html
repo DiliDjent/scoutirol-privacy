@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hilfe &amp; Kontakt – ScouTirol</title>
+<title>Hilfe &amp; Kontakt · Aiuto e contatti · Help &amp; Contact – ScouTirol</title>
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; color: #1a1a1a; }
   h1 { font-size: 1.6rem; }
@@ -11,16 +11,20 @@
   h3 { font-size: 1rem; margin-bottom: 0.2rem; }
   a { color: #0b5fff; }
   .stand { color: #666; font-size: 0.9rem; }
-  nav a { margin-right: 1rem; }
+  nav.sprachwahl { margin-bottom: 1.5rem; }
+  nav.sprachwahl a[aria-current] { font-weight: 600; color: #1a1a1a; text-decoration: none; }
+  section { scroll-margin-top: 6rem; }
+  section:not([hidden]) ~ section:not([hidden]) { margin-top: 3rem; border-top: 2px solid #ddd; }
 </style>
 </head>
 <body>
 
+<nav class="sprachwahl" aria-label="Sprache · Lingua · Language"><a href="#de" hreflang="de" lang="de">Deutsch</a> · <a href="#it" hreflang="it" lang="it">Italiano</a> · <a href="#en" hreflang="en" lang="en">English</a></nav>
+
+<section id="de" lang="de" data-titel="Hilfe &amp; Kontakt – ScouTirol">
 <h1>ScouTirol – Hilfe &amp; Kontakt</h1>
 <p class="stand">Wander-, Rad- und Autotouren in Südtirol · für Android und iPhone</p>
-<nav><a href="#de">Deutsch</a><a href="#it">Italiano</a><a href="#en">English</a></nav>
 
-<h2 id="de">Deutsch</h2>
 <p><strong>Kontakt:</strong> <a href="mailto:diegofrisanco@gmail.com?subject=ScouTirol">diegofrisanco@gmail.com</a> – du kannst auch in der App unter <em>Mehr → Fehler melden</em> schreiben; Sprache und Gerät stehen dann schon in der Nachricht.</p>
 
 <h3>Die App findet meinen Standort nicht</h3>
@@ -37,30 +41,93 @@
 
 <h3>Warum fehlen Wetter, Sperren oder Seilbahnen?</h3>
 <p>Diese Angaben kommen aus den offenen Daten des Landes Südtirol und gibt es nur für Ziele in Südtirol. Aufzeichnen und Navigieren funktionieren überall.</p>
+</section>
 
-<h2 id="it">Italiano</h2>
-<p><strong>Contatto:</strong> <a href="mailto:diegofrisanco@gmail.com?subject=ScouTirol">diegofrisanco@gmail.com</a> – puoi scrivere anche dall'app in <em>Altro → Segnala un errore</em>.</p>
+<section id="it" lang="it" data-titel="Aiuto e contatti – ScouTirol">
+<h1>ScouTirol – Aiuto e contatti</h1>
+<p class="stand">Escursioni a piedi, in bici e in auto in Alto Adige · per Android e iPhone</p>
+
+<p><strong>Contatto:</strong> <a href="mailto:diegofrisanco@gmail.com?subject=ScouTirol">diegofrisanco@gmail.com</a> – puoi scrivere anche dall'app in <em>Altro → Segnala un errore</em>; in tal caso lingua e dispositivo sono già indicati nel messaggio.</p>
+
 <h3>L'app non trova la mia posizione</h3>
-<p>Serve l'autorizzazione alla posizione. iPhone: <em>Impostazioni → ScouTirol → Posizione → „Mentre usi l'app“</em> e attiva „Posizione esatta“. Android: <em>Impostazioni → App → ScouTirol → Autorizzazioni → Posizione</em>. Verifica anche che la localizzazione sia attiva sul dispositivo.</p>
-<h3>La registrazione continua a schermo bloccato?</h3>
-<p>Sì, finché la registrazione che hai avviato è in corso. Sull'iPhone vedi in alto l'indicatore blu della posizione, su Android una notifica. Basta „Mentre usi l'app“; „Sempre“ non serve.</p>
-<h3>La mappa funziona senza campo?</h3>
-<p>Le porzioni di mappa che hai già visto restano salvate e compaiono anche senza rete. Guarda quindi la zona del tuo tour prima di partire, finché hai campo. I tour salvati sono sempre disponibili offline.</p>
-<h3>Dove sono le mie foto e i miei tour?</h3>
-<p>Solo sul tuo dispositivo – ScouTirol non carica nulla. Sull'iPhone fanno parte del backup iCloud o del computer. Se disinstalli l'app, cancelli anche tour e foto.</p>
+<p>ScouTirol ha bisogno dell'autorizzazione alla posizione. iPhone: <em>Impostazioni → ScouTirol → Posizione → “Mentre usi l'app”</em> e attiva “Posizione esatta”. Android: <em>Impostazioni → App → ScouTirol → Autorizzazioni → Posizione</em>. Verifica anche che la localizzazione sia attiva sul dispositivo.</p>
 
-<h2 id="en">English</h2>
-<p><strong>Contact:</strong> <a href="mailto:diegofrisanco@gmail.com?subject=ScouTirol">diegofrisanco@gmail.com</a> – you can also write from the app under <em>More → Report a bug</em>.</p>
+<h3>L'app continua a registrare a schermo bloccato?</h3>
+<p>Sì, purché tu abbia avviato la registrazione. Sull'iPhone vedi in alto l'indicatore blu della posizione, su Android una notifica. Basta l'autorizzazione “Mentre usi l'app”; “Sempre” non serve.</p>
+
+<h3>La mappa funziona senza campo?</h3>
+<p>Le porzioni di mappa che hai già visto restano salvate e compaiono anche senza rete. Guarda quindi una volta la zona del tuo tour prima di partire, finché hai campo. I tour salvati sono sempre disponibili offline.</p>
+
+<h3>Dove sono le mie foto e i miei tour?</h3>
+<p>Solo sul tuo dispositivo – ScouTirol non carica nulla. Sull'iPhone fanno parte del backup iCloud o del computer. Chi elimina l'app elimina anche tour e foto.</p>
+
+<h3>Perché mancano meteo, chiusure o funivie?</h3>
+<p>Queste informazioni provengono dai dati aperti della Provincia di Bolzano e sono disponibili solo per destinazioni in Alto Adige. Registrazione e navigazione funzionano ovunque.</p>
+</section>
+
+<section id="en" lang="en" data-titel="Help &amp; Contact – ScouTirol">
+<h1>ScouTirol – Help &amp; Contact</h1>
+<p class="stand">Hiking, cycling and driving tours in South Tyrol · for Android and iPhone</p>
+
+<p><strong>Contact:</strong> <a href="mailto:diegofrisanco@gmail.com?subject=ScouTirol">diegofrisanco@gmail.com</a> – you can also write from the app under <em>More → Report a bug</em>; language and device are then already included in the message.</p>
+
 <h3>The app can't find my location</h3>
-<p>ScouTirol needs location access. iPhone: <em>Settings → ScouTirol → Location → “While Using the App”</em> and turn on “Precise Location”. Android: <em>Settings → Apps → ScouTirol → Permissions → Location</em>. Also check that location services are on.</p>
-<h3>Does recording continue with the screen locked?</h3>
-<p>Yes, as long as the recording you started is running. On iPhone you see the blue location indicator at the top, on Android a notification. “While Using the App” is enough; “Always” is not needed.</p>
+<p>ScouTirol needs location access. iPhone: <em>Settings → ScouTirol → Location → “While Using the App”</em> and turn on “Precise Location”. Android: <em>Settings → Apps → ScouTirol → Permissions → Location</em>. Also check that location services are enabled on your device.</p>
+
+<h3>Does the app keep recording with the screen locked?</h3>
+<p>Yes, as long as you have started the recording. On iPhone you see the blue location indicator at the top, on Android a notification. The “While Using the App” permission is enough for this; “Always” is not needed.</p>
+
 <h3>Does the map work without a signal?</h3>
-<p>Map areas you have viewed before stay saved and appear without a network. So look at the area of your tour once while you still have a signal. Saved tours are always available offline.</p>
+<p>Map areas you have viewed before stay saved and also appear without a network. So look at the area of your tour once beforehand, while you still have a signal. Saved tours are always available offline.</p>
+
 <h3>Where are my photos and tours?</h3>
-<p>Only on your device – ScouTirol uploads nothing. On iPhone they are part of the iCloud or computer backup. Deleting the app deletes tours and photos too.</p>
+<p>Only on your device – ScouTirol uploads nothing. On iPhone they are part of the iCloud or computer backup. Deleting the app also deletes tours and photos.</p>
+
+<h3>Why are weather, closures or cable cars missing?</h3>
+<p>This information comes from the open data of the Province of Bolzano and is only available for destinations in South Tyrol. Recording and navigation work everywhere.</p>
+</section>
 
 <p class="stand"><a href="https://dilidjent.github.io/scoutirol-privacy/">Datenschutzerklärung / Informativa privacy / Privacy policy</a></p>
 
+<script>
+/* Sprachwahl: zeigt nur die Fassung zum Anker (#de, #it, #en) oder sonst zur Browsersprache
+   (erste passende in navigator.languages: it* -> it, de* -> de, en* -> en; keine passende -> en).
+   Ohne Skript bleiben alle drei Fassungen untereinander sichtbar. */
+(function () {
+  var sprachen = ['de', 'it', 'en'];
+  function ausAnker() {
+    var h = (location.hash || '').slice(1).toLowerCase();
+    return sprachen.indexOf(h) >= 0 ? h : null;
+  }
+  function ausBrowser() {
+    var liste = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || ''];
+    for (var i = 0; i < liste.length; i++) {
+      var m = /^(it|de|en)([-_]|$)/.exec(String(liste[i]).toLowerCase());
+      if (m) return m[1];
+    }
+    return 'en';
+  }
+  function zeige(sprache) {
+    for (var i = 0; i < sprachen.length; i++) {
+      var s = sprachen[i];
+      var abschnitt = document.getElementById(s);
+      var link = document.querySelector('nav.sprachwahl a[href="#' + s + '"]');
+      abschnitt.hidden = (s !== sprache);
+      if (s === sprache) {
+        link.setAttribute('aria-current', 'true');
+        document.title = abschnitt.getAttribute('data-titel');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    }
+    document.documentElement.lang = sprache;
+  }
+  zeige(ausAnker() || ausBrowser());
+  window.addEventListener('hashchange', function () {
+    zeige(ausAnker() || ausBrowser());
+    window.scrollTo(0, 0);
+  });
+})();
+</script>
 </body>
 </html>
