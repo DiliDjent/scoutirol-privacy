@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScouTirol Winter</title>
+<meta name="description" content="Rodelbahnen, Loipen, Skitouren, 54 Skigebiete, Wetter und Lawinenlage in Südtirol und den Dolomiten – auch ohne Empfang.">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<!--
+  Ziel des QR-Codes auf der Werbe-Visitenkarte (store/visitenkarte/).
+  Quelle: docs/ios/app.html im Projekt WinterScoutSuedtirol, veröffentlicht als
+  winterscout/app/index.html im Repo scoutirol-privacy.
+  iPhone/iPad springen direkt in den App Store. Sobald die App bei Google Play
+  im Verkauf ist, PLAY_LIVE auf true setzen: dann springen auch Android-Handys
+  direkt in den Store, und der Hinweis „in Kürze“ verschwindet.
+-->
+<script>
+  var APP_STORE = 'https://apps.apple.com/app/id6823163788';
+  var PLAY_STORE = 'https://play.google.com/store/apps/details?id=com.winterscout.winterscout_suedtirol';
+  var PLAY_LIVE = false;
+  (function () {
+    var ua = navigator.userAgent || '';
+    var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+    var android = /Android/.test(ua);
+    if (location.hash === '#bleiben') return;
+    if (ios) location.replace(APP_STORE);
+    else if (android && PLAY_LIVE) location.replace(PLAY_STORE);
+  })();
+</script>
+<style>
+  :root { --tanne: #173F3E; --blau: #2A7093; --stern: #DF9635; --creme: #FAF0E8; --grund: #ffffff; --text: #173F3E; --leise: #4f6463; --karte: #ffffff; --rand: #e8ddd2; }
+  @media (prefers-color-scheme: dark) {
+    :root { --grund: #101a1a; --text: #e8efee; --leise: #a7b8b6; --karte: #182424; --rand: #2a3a3a; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: var(--text); background: var(--grund); line-height: 1.5; }
+  header { background: var(--creme); color: var(--tanne); padding: 2rem 1.25rem 1.75rem; text-align: center; border-bottom: 4px solid var(--stern); }
+  header img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 4px 18px rgba(23,63,62,.18); }
+  h1 { font-size: 1.9rem; margin: .8rem 0 .15rem; letter-spacing: .01em; }
+  h1 span { color: var(--blau); font-weight: 400; }
+  header p { margin: 0; color: var(--blau); font-weight: 600; }
+  main { max-width: 520px; margin: 0 auto; padding: 1.5rem 1.25rem 2.5rem; }
+  .knopf { display: block; text-align: center; text-decoration: none; font-weight: 600; font-size: 1.1rem; padding: .95rem 1rem; border-radius: 12px; margin: 0 0 .75rem; }
+  .knopf.apple { background: #000; color: #fff; }
+  .knopf.play { background: var(--tanne); color: #fff; }
+  .bald { text-align: center; color: var(--leise); font-size: .95rem; margin: 0 0 1.5rem; border: 1px dashed var(--rand); border-radius: 12px; padding: .8rem; }
+  ul { list-style: none; padding: 0; margin: 1.25rem 0; background: var(--karte); border: 1px solid var(--rand); border-radius: 14px; }
+  li { padding: .7rem 1rem; border-top: 1px solid var(--rand); }
+  li:first-child { border-top: 0; }
+  .klein { color: var(--leise); font-size: .9rem; text-align: center; }
+  nav { text-align: center; margin-top: 1rem; font-size: .95rem; }
+  nav a, .klein a { color: var(--blau); }
+  @media (prefers-color-scheme: dark) { nav a, .klein a { color: #7fbfdf; } }
+  nav a { margin: 0 .5rem; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<header>
+  <img src="icon.png" alt="" width="112" height="112">
+  <h1>ScouTirol <span>Winter</span></h1>
+  <p data-t="unter">Südtirol &amp; Dolomiten im Winter</p>
+</header>
+<main>
+  <a class="knopf apple" id="apple" href="https://apps.apple.com/app/id6823163788" data-t="apple">Im App Store laden</a>
+  <a class="knopf play" id="play" href="https://play.google.com/store/apps/details?id=com.winterscout.winterscout_suedtirol" hidden data-t="play">Bei Google Play laden</a>
+  <p class="bald" id="bald" data-t="bald">Für Android-Handys erscheint die App in Kürze bei Google Play.</p>
+
+  <ul>
+    <li data-t="f1">Rodelbahnen, Loipen, Skitouren und Winterwanderungen</li>
+    <li data-t="f2">54 Skigebiete mit Pisten und Anlagen, Skipass-Preise für 50 davon</li>
+    <li data-t="f3">Wetter und Lawinenlage für Südtirol und die Dolomiten</li>
+    <li data-t="f4">Karten, die auch ohne Empfang funktionieren</li>
+    <li data-t="f5">SOS-Bereich: Koordinaten und Höhe für die Leitstelle</li>
+  </ul>
+  <p class="klein" data-t="frei">Keine Werbung, kein Konto. Deutsch, Italienisch, Englisch.</p>
+  <nav>
+    <a href="#" data-lang="de">Deutsch</a>
+    <a href="#" data-lang="it">Italiano</a>
+    <a href="#" data-lang="en">English</a>
+  </nav>
+  <p class="klein"><a href="../support.html" data-t="hilfe">Hilfe &amp; Kontakt</a> · <a href="../" data-t="ds">Datenschutz</a></p>
+</main>
+<script>
+  var TEXTE = {
+    de: {
+      unter: 'Südtirol & Dolomiten im Winter',
+      apple: 'Im App Store laden',
+      play: 'Bei Google Play laden',
+      bald: 'Für Android-Handys erscheint die App in Kürze bei Google Play.',
+      f1: 'Rodelbahnen, Loipen, Skitouren und Winterwanderungen',
+      f2: '54 Skigebiete mit Pisten und Anlagen, Skipass-Preise für 50 davon',
+      f3: 'Wetter und Lawinenlage für Südtirol und die Dolomiten',
+      f4: 'Karten, die auch ohne Empfang funktionieren',
+      f5: 'SOS-Bereich: Koordinaten und Höhe für die Leitstelle',
+      frei: 'Keine Werbung, kein Konto. Deutsch, Italienisch, Englisch.',
+      hilfe: 'Hilfe & Kontakt', ds: 'Datenschutz', ds_href: '../'
+    },
+    it: {
+      unter: 'Alto Adige e Dolomiti d’inverno',
+      apple: 'Scarica dall’App Store',
+      play: 'Scarica da Google Play',
+      bald: 'Per i telefoni Android l’app arriverà a breve su Google Play.',
+      f1: 'Piste da slittino, fondo, scialpinismo ed escursioni invernali',
+      f2: '54 comprensori con piste e impianti, prezzi degli skipass per 50',
+      f3: 'Meteo e pericolo valanghe per l’Alto Adige e le Dolomiti',
+      f4: 'Mappe che funzionano anche senza campo',
+      f5: 'Sezione SOS: coordinate e quota per la centrale operativa',
+      frei: 'Niente pubblicità, nessun account. Italiano, tedesco, inglese.',
+      hilfe: 'Aiuto e contatti', ds: 'Privacy', ds_href: '../it.html'
+    },
+    en: {
+      unter: 'South Tyrol & Dolomites in winter',
+      apple: 'Download on the App Store',
+      play: 'Get it on Google Play',
+      bald: 'For Android phones the app is coming to Google Play soon.',
+      f1: 'Toboggan runs, cross-country trails, ski tours and winter hikes',
+      f2: '54 ski areas with slopes and lifts, ski pass prices for 50 of them',
+      f3: 'Weather and avalanche danger for South Tyrol and the Dolomites',
+      f4: 'Maps that work without a signal',
+      f5: 'SOS section: coordinates and altitude for the dispatch centre',
+      frei: 'No ads, no account. English, German, Italian.',
+      hilfe: 'Help & contact', ds: 'Privacy', ds_href: '../en.html'
+    }
+  };
+  function sprache(l) {
+    var t = TEXTE[l] || TEXTE.en;
+    document.documentElement.lang = TEXTE[l] ? l : 'en';
+    document.querySelectorAll('[data-t]').forEach(function (el) {
+      var k = el.getAttribute('data-t');
+      if (t[k]) el.textContent = t[k];
+    });
+    document.querySelector('[data-t="ds"]').setAttribute('href', t.ds_href);
+    document.querySelectorAll('nav a').forEach(function (a) {
+      if (a.getAttribute('data-lang') === document.documentElement.lang) a.setAttribute('aria-current', 'true');
+      else a.removeAttribute('aria-current');
+    });
+  }
+  var start = (navigator.language || 'en').slice(0, 2).toLowerCase();
+  sprache(start);
+  document.querySelectorAll('nav a').forEach(function (a) {
+    a.addEventListener('click', function (e) { e.preventDefault(); sprache(a.getAttribute('data-lang')); });
+  });
+  if (PLAY_LIVE) {
+    document.getElementById('play').hidden = false;
+    document.getElementById('bald').hidden = true;
+  }
+</script>
+</body>
+</html>
